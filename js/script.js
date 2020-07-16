@@ -20,12 +20,18 @@ function palindromeCheck (stringa){
     for (var i = stringa.length-1; i >= 0; i--){
         stringaInversa += stringa[i];
     }
-    // check frase palindroma
-    for (var i = 0; i < stringa.length; i++){
-        if (stringaInversa[i] != stringa[i]){
+
+    // check frase palindroma - ciclo for + ciclo if
+    // for (var i = 0; i < stringa.length; i++){
+    //     if (stringaInversa[i] != stringa[i]){
+    //         check=false;
+    //     }
+    // }
+
+    if (stringaInversa != stringa){
             check=false;
-        }
     }
+
     // restituisce valore booleano (true se palindroma)
     return check;
 }
